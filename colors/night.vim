@@ -1,10 +1,9 @@
 " Vim color file
-" Maintainer:   tiza
-" Last Change:  2002/02/22 Fri 18:56.
-" version: 1.1
-" GUI only
-
+"  Maintainer: Tiza
+" Last Change: 2002/03/08 Fri 21:39.
+"     version: 2.0
 " This color scheme uses a dark background.
+" GUI only
 
 set background=dark
 hi clear
@@ -14,60 +13,67 @@ endif
 
 let colors_name = "night"
 
-hi Normal       guifg=#ffffff guibg=#303040
+hi Normal       guifg=#f0f0f8 guibg=#303040
 
-hi IncSearch    gui=UNDERLINE,BOLD guifg=#ffffff guibg=#d000d0
+" Search
+hi IncSearch    gui=UNDERLINE,BOLD guifg=#f0f0f8 guibg=#d000d0
 hi Search       gui=BOLD guifg=#ffd0ff guibg=#c000c0
 
-hi ErrorMsg     gui=BOLD guifg=#ffffff guibg=#ff0088
-hi WarningMsg   gui=BOLD guifg=#ffffff guibg=#ff0088
+" Messages
+hi ErrorMsg     gui=BOLD guifg=#ffffff guibg=#f00080
+hi WarningMsg   gui=BOLD guifg=#ffffff guibg=#f00080
 hi ModeMsg      gui=BOLD guifg=#00e0ff guibg=NONE
 hi MoreMsg      gui=BOLD guifg=#00ffdd guibg=NONE
-hi Question     gui=BOLD guifg=#ff90ff guibg=NONE
+hi Question     gui=BOLD guifg=#d0d050 guibg=NONE
 
-hi StatusLine   gui=BOLD guifg=#ffffff guibg=#7700ff
-hi StatusLineNC gui=BOLD guifg=#c0b0ff guibg=#7700ff
-hi VertSplit    gui=NONE guifg=#ffffff guibg=#7700ff
-hi WildMenu     gui=BOLD guifg=#ffffff guibg=#d08020
+" Split area
+hi StatusLine   gui=NONE guifg=#101018 guibg=#c8c8d8
+hi StatusLineNC gui=NONE guifg=#606080 guibg=#c8c8d8
+hi VertSplit    gui=NONE guifg=#606080 guibg=#c8c8d8
+hi WildMenu     gui=NONE guifg=#101018 guibg=#ffffff
 
-hi Visual       gui=NONE guifg=#ffffff guibg=#7070c0
-
+" Diff
 hi DiffText     gui=NONE guifg=#ffffff guibg=#40a060
 hi DiffChange   gui=NONE guifg=#ffffff guibg=#007070
-hi DiffDelete   gui=BOLD guifg=#ffffff guibg=#40a0c0
+hi DiffDelete   gui=NONE guifg=#ffffff guibg=#40a0c0
 hi DiffAdd      gui=NONE guifg=#ffffff guibg=#40a0c0
 
-hi Cursor       gui=NONE guifg=#ffffff guibg=#ff9020
-hi lCursor      gui=NONE guifg=#ffffff guibg=#ff00d0
-hi CursorIM     gui=NONE guifg=#ffffff guibg=#ff00d0
+" Cursor
+hi Cursor       gui=NONE guifg=#ffffff guibg=#d86020
+hi lCursor      gui=NONE guifg=#ffffff guibg=#e000b0
+hi CursorIM     gui=NONE guifg=#ffffff guibg=#e000b0
 
-hi Folded       gui=BOLD guifg=#e8e8f0 guibg=#606078
+" Fold
+hi Folded       gui=BOLD guifg=#e8e8ff guibg=#7070c0
 hi FoldColumn   gui=NONE guifg=#a0a0b0 guibg=#404050
 
+" Other
 hi Directory    gui=NONE guifg=#00ffff guibg=NONE
-hi Title        gui=BOLD guifg=#ffffff guibg=#8000d0
 hi LineNr       gui=NONE guifg=#808098 guibg=NONE
 hi NonText      gui=BOLD guifg=#8040ff guibg=#383848
 hi SpecialKey   gui=BOLD guifg=#60a0ff guibg=NONE
+hi Title        gui=BOLD guifg=#f0f0f8 guibg=#9000a0
+hi Visual       gui=NONE guifg=#ffffff guibg=#d09050
 
-" Groups for syntax highlighting
-hi Comment      gui=BOLD guifg=#ff60ff guibg=NONE
-hi Constant     gui=NONE guifg=#ffffff guibg=#4822bb
-hi Special      gui=NONE guifg=#44ffff guibg=#4822bb
+" Syntax group
+hi Comment      gui=BOLD guifg=#f080ff guibg=NONE
+hi Constant     gui=NONE guifg=#f0f0f8 guibg=#4830a0
+hi Error        gui=BOLD guifg=#ffffff guibg=#f00080
 hi Identifier   gui=NONE guifg=#90d0ff guibg=NONE
-hi Statement    gui=BOLD guifg=#00ccbb guibg=NONE
-hi PreProc      gui=NONE guifg=#40ffa0 guibg=NONE
-hi Type         gui=BOLD guifg=#bb99ff guibg=NONE
-hi Todo         gui=BOLD guifg=#ffffff guibg=#ff0088
 hi Ignore       gui=NONE guifg=#303040 guibg=NONE
-hi Error        gui=BOLD guifg=#ffffff guibg=#ff0088
+hi PreProc      gui=NONE guifg=#40ffa0 guibg=NONE
+hi Special      gui=NONE guifg=#40f8f8 guibg=#4830a0
+hi Statement    gui=BOLD guifg=#00ccbb guibg=NONE
+hi Todo         gui=BOLD guifg=#ffe0c8 guibg=#c07038
+hi Type         gui=BOLD guifg=#bb99ff guibg=NONE
+hi Underlined   gui=UNDERLINE,BOLD guifg=#f0f0f8 guibg=NONE
 
 " HTML
-hi htmlLink                 gui=UNDERLINE
-hi htmlBoldUnderline        gui=BOLD
-hi htmlBoldItalic           gui=BOLD
+hi htmlLink                 gui=UNDERLINE,BOLD
 hi htmlBold                 gui=BOLD
-hi htmlBoldUnderlineItalic  gui=BOLD
-hi htmlUnderlineItalic      gui=UNDERLINE
+hi htmlBoldItalic           gui=BOLD,ITALIC
+hi htmlBoldUnderline        gui=BOLD,UNDERLINE
+hi htmlBoldUnderlineItalic  gui=BOLD,UNDERLINE,ITALIC
+hi htmlItalic               gui=ITALIC
 hi htmlUnderline            gui=UNDERLINE
-hi htmlItalic               gui=italic
+hi htmlUnderlineItalic      gui=UNDERLINE,ITALIC
