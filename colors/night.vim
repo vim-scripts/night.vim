@@ -1,6 +1,7 @@
 " Vim color file
 " Maintainer:   tiza
-" Last Change:  2002/02/22 Fri 07:23.
+" Last Change:  2002/02/22 Fri 18:56.
+" version: 1.1
 " GUI only
 
 " This color scheme uses a dark background.
@@ -41,7 +42,7 @@ hi lCursor      gui=NONE guifg=#ffffff guibg=#ff00d0
 hi CursorIM     gui=NONE guifg=#ffffff guibg=#ff00d0
 
 hi Folded       gui=BOLD guifg=#e8e8f0 guibg=#606078
-hi FoldColumn   gui=NONE guifg=#9090ff guibg=#404050
+hi FoldColumn   gui=NONE guifg=#a0a0b0 guibg=#404050
 
 hi Directory    gui=NONE guifg=#00ffff guibg=NONE
 hi Title        gui=BOLD guifg=#ffffff guibg=#8000d0
@@ -50,7 +51,7 @@ hi NonText      gui=BOLD guifg=#8040ff guibg=#383848
 hi SpecialKey   gui=BOLD guifg=#60a0ff guibg=NONE
 
 " Groups for syntax highlighting
-hi Comment      gui=BOLD guifg=#ff50b0 guibg=NONE
+hi Comment      gui=BOLD guifg=#ff60ff guibg=NONE
 hi Constant     gui=NONE guifg=#ffffff guibg=#4822bb
 hi Special      gui=NONE guifg=#44ffff guibg=#4822bb
 hi Identifier   gui=NONE guifg=#90d0ff guibg=NONE
@@ -58,7 +59,7 @@ hi Statement    gui=BOLD guifg=#00ccbb guibg=NONE
 hi PreProc      gui=NONE guifg=#40ffa0 guibg=NONE
 hi Type         gui=BOLD guifg=#bb99ff guibg=NONE
 hi Todo         gui=BOLD guifg=#ffffff guibg=#ff0088
-hi Ignore       gui=NONE guifg=#000000 guibg=NONE
+hi Ignore       gui=NONE guifg=#303040 guibg=NONE
 hi Error        gui=BOLD guifg=#ffffff guibg=#ff0088
 
 " HTML
